@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/camera_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.example.china.audiodemo.widget.NoMissButton
+            android:id="@+id/surface_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/login_bt"
+            android:text="Surface"
+            android:textColor="@color/ctid_black"
+            android:textSize="16sp" />
+
+        <com.example.china.audiodemo.widget.NoMissButton
+            android:id="@+id/texture_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/login_bt"
+            android:text="Texture"
+            android:textColor="@color/ctid_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>
