@@ -52,6 +52,7 @@ public class MainActivity extends BaseActivity {
         list.add(new ItemClass(CameraActivity.class, "3、Camera预览"));
         list.add(new ItemClass(MP4Activity.class, "4、音视频解析、合成"));
         list.add(new ItemClass(OpenGLActivity.class, "5、OpenGL ES 绘制"));
+        list.add(new ItemClass(AccessibilityActivity.class, "6、无障碍服务"));
 
         adapter.notifyDataSetChanged();
     }
